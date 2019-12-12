@@ -68,3 +68,44 @@
 - a series of discrete steps
 
     - often described as extraction, tranformation, and load
+
+
+## Bikeshare DAG ##
+
+### Example ###
+
+#### Initial Pipeline ####
+
+- S3 -> Redshift
+
+- Redshift Analysis
+
+- Deliver Data
+
+Then, you suspect you may want to incorporate another data source to get traffic info to place bikeshare hubs in optimal locations. So you add another edge to the graph.
+
+## Apache Airflow ##
+
+### Definition ###
+
+- open source tool and platform to programattically author, schedule, and monitor workflows
+
+### About ### 
+
+- created by airBnB
+
+- goals: 
+    - DAG-based
+    - schedule-able
+    - data-pipeline tool
+    - capable of running in mission-critical environments
+
+### Why it is popular ###
+
+- Airflow DAGs are written in python
+
+- simple to maintain and can run data analysis itself or trigger external tools
+
+- visual representation of the DAG
+
+##
