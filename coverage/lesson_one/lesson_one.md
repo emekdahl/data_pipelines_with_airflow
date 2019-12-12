@@ -38,5 +38,33 @@
 
 - the conceptual framework of data pipelines will help you better organize and execute everyday data engineering tasks
 
+## DAGs and Data Pipelines ## 
 
+### Directed Acyclic Graphs (DAGs) ###
 
+- data pipelines are well expressed as Directed Acyclic Graphs
+
+- The conceptual framework of data pipelines will help to better organize and execute everyday data engineering tasks
+
+### What is a graph? ###
+
+- Graphs describe entities and the relationships between them
+
+### Examples ###
+
+- Social networks
+    - model users as nodes and their relationships as edges
+
+- Airlines
+    - Airports are nodes
+    - Edges are flights to other locations
+
+### What is a DAG? ###
+
+- DAGs consist of vertices, or nodes, & directed edges that connect to those nodes
+
+- DAGs have a direction and DO NOT CONTAIN CYCLES
+
+- a series of discrete steps
+
+    - often described as extraction, tranformation, and load
