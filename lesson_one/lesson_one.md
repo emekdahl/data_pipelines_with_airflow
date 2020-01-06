@@ -2,7 +2,7 @@
 
 ### How Airflow Works ###
 
-##### What makes up Airflow? #####
+#### What makes up Airflow? ####
 
 - scheduler: for orchestrating execution of jobs on a trigger or schedule
     - starts DAGs based on time or external triggers
@@ -20,6 +20,32 @@
 
 ** caveat : airflow only has the processing power of one machine, so you don't do the heavy processing of data on these servers.
 Rather, you use it to schedule and kick off the workers
+
+
+### Operators and Tasks ###
+
+#### Building a Data Pipeline in Airflow ####
+
+- Airflow comes with many operators out of the box that can perform common operations 
+
+    - PythonOperator
+    - PostgresOperator
+    - RedshiftToS3Operator
+    - S3ToRedshiftOperator
+    - BashOperator
+    - SimpleHttpOperator
+    - Sensor
+    
+#### Task Dependencies ####
+
+##### Airflow Dags #####
+
+- nodes = tasks
+- edges = ordering and dependencies between tasks
+
+- task dependencies can be described programmatically in Airflow using >> and <<
+
+
 
 
 
