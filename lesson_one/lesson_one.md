@@ -43,9 +43,11 @@ Rather, you use it to schedule and kick off the workers
 - nodes = tasks
 - edges = ordering and dependencies between tasks
 
+Option 1:
 - task dependencies can be described programmatically in Airflow using >> and <<
 
-
+Option 2:
+- Task dependencies can also be set with "set_downstream" and "set_upstream"
 
 
 
