@@ -50,4 +50,16 @@ Option 2:
 - Task dependencies can also be set with "set_downstream" and "set_upstream"
 
 
+#### Airflow Hooks
 
+Connections can be accessed in code via hooks
+
+- Hooks provide a resuable interface to external systems and databases
+- You don't have to worry about how and where to store these connection strings and secrets in your code
+
+Hooks:
+- HttpHook
+- PostgresHook (works with RedShift)
+- MySqlHook
+- SlackHook
+- PrestoHook
