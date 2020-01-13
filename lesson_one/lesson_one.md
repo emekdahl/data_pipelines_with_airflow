@@ -63,3 +63,8 @@ Hooks:
 - MySqlHook
 - SlackHook
 - PrestoHook
+
+
+#### Templating
+
+Airflow leverages templating to allow users to "fill in the blank" with important runtime variables for tasks
